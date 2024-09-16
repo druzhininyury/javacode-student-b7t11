@@ -1,0 +1,28 @@
+package ru.javacode.student.model.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+import ru.javacode.student.model.Order;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Getter
+@Setter
+public class OrderDtoFull {
+
+    private Long id;
+
+    private CustomerDtoFull customer;
+
+    private List<ProductDtoViewFull> products;
+
+    private LocalDate orderDate;
+
+    private String shippingAddress;
+
+    private Long totalPrice;
+
+    private Order.Status orderStatus;
+
+}
